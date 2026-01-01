@@ -4,10 +4,10 @@ const express = require('express');
 const cors = require('cors');
 
 const routes = require('./src/routes');
-const responseFormat = require('@/middleware/responseFormat');
-const notFound = require('./src/middleware/notFoundHandler');
-const exceptionHandler = require('@/middleware/exceptionHandler');
-const { apiRateLimiter } = require('@/middleware/rateLimiter');
+const responseFormat = require('@/middlewares/responseFormat');
+const notFound = require('./src/middlewares/notFoundHandler');
+const exceptionHandler = require('@/middlewares/exceptionHandler');
+const { apiRateLimiter } = require('@/middlewares/rateLimiter');
 
 require('@/config/database');
 
